@@ -73,7 +73,7 @@ exports.delete = function(req, res) {
  * List of Linkies
  */
 exports.list = function(req, res) {
-	Linky.find().sort('-created').populate('user', 'displayName').exec(function(err, linkies) {
+	Linky.find({'user': req.user.id }).sort('-created').populate('user', 'username').exec(function(err, linkies) {
 		if (err) {
 			return res.status(400).send({
 				message: errorHandler.getErrorMessage(err)
@@ -95,7 +95,7 @@ exports.linkyByID = function(req, res, next, id) {
 		});
 	}
 
-	Linky.findById(id).populate('user', 'displayName').exec(function(err, linky) {
+	Linky.findById(id).populate('user', 'username').exec(function(err, linky) {
 		if (err) return next(err);
 		if (!linky) {
 			return res.status(404).send({

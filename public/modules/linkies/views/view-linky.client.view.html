@@ -1,13 +1,14 @@
 <section data-ng-controller="LinkiesController" data-ng-init="findOne()">
 	<div class="page-header">
 		<h1 data-ng-bind="linky.title"></h1>
-		<h2 data-ng-bind="linky.link"></h1>
+		<a href="{{linky.link}}" data-ng-bind="linky.link"></a>
+		<p class="lead" data-ng-bind="linky.description"></p>
 	</div>
 	<div class="pull-right" data-ng-show="authentication.user._id == linky.user._id">
-		<a class="btn btn-primary" href="/#!/linkies/{{linky._id}}/edit">
+		<a class="btn" href="/#!/linkies/{{linky._id}}/edit">
 			<i class="glyphicon glyphicon-edit"></i>
 		</a>
-		<a class="btn btn-primary" data-ng-click="remove();">
+		<a class="btn" data-ng-click="remove();">
 			<i class="glyphicon glyphicon-trash"></i>
 		</a>
 	</div>
@@ -16,8 +17,7 @@
 			Posted on
 			<span data-ng-bind="linky.created | date:'mediumDate'"></span>
 			by
-			<span data-ng-bind="linky.user.displayName"></span>
+			<span data-ng-bind="linky.user.username"></span>
 		</em>
 	</small>
-	<p class="lead" data-ng-bind="linky.description"></p>
 </section>

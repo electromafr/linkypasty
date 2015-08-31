@@ -9,11 +9,11 @@ var users = require('../../app/controllers/users.server.controller'),
 module.exports = function(app) {
 	// Linky Routes
 	app.route('/linkies')
-		.get(linkies.list)
+		.get(users.requiresLogin, linkies.list)
 		.post(users.requiresLogin, linkies.create);
 
 	app.route('/linkies/:linkyId')
-		.get(linkies.read)
+		.get(users.requiresLogin, linkies.read)
 		.put(users.requiresLogin, linkies.hasAuthorization, linkies.update)
 		.delete(users.requiresLogin, linkies.hasAuthorization, linkies.delete);
 
