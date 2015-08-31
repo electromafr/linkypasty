@@ -1,0 +1,41 @@
+<section data-ng-controller="LinkiesController" data-ng-init="findOne()">
+	<div class="page-header">
+		<h1>Edit Linky</h1>
+	</div>
+	<div class="col-md-12">
+		<form name="linkyForm" class="form-horizontal" data-ng-submit="update(linkyForm.$valid)" novalidate>
+			<fieldset>
+				<div class="form-group" ng-class="{ 'has-error' : submitted && linkyForm.title.$invalid}">
+					<label class="control-label" for="title">Title</label>
+					<div class="controls">
+						<input name="title" type="text" data-ng-model="linky.title" id="title" class="form-control" placeholder="Title" required>
+					</div>
+					<div ng-show="submitted && linkyForm.title.$invalid" class="help-block">
+						<p ng-show="linkyForm.title.$error.required" class="text-danger">Title is required</p>
+					</div>
+				</div>
+				<div class="form-group" ng-class="{ 'has-error' : submitted && linkyForm.link.$invalid}">
+					<label class="control-label" for="link">Link</label>
+					<div class="controls">
+						<input name="link" type="text" data-ng-model="linky.link" id="link" class="form-control" placeholder="Link" required>
+					</div>
+					<div ng-show="submitted && linkyForm.link.$invalid" class="help-block">
+						<p ng-show="linkyForm.link.$error.required" class="text-danger">Link is required</p>
+					</div>
+				</div>
+				<div class="form-group" ng-class="{ 'has-error' : submitted && linkyForm.description.$invalid}">
+					<label class="control-label" for="description">Description (optional)</label>
+					<div class="controls">
+						<textarea name="description" data-ng-model="linky.description" id="description" class="form-control" cols="30" rows="10" placeholder="Description" required></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Update" class="btn btn-default">
+				</div>
+				<div data-ng-show="error" class="text-danger">
+					<strong data-ng-bind="error"></strong>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</section>
