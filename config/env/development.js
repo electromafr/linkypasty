@@ -2,7 +2,7 @@
 
 module.exports = {
 	db: {
-		uri: 'mongodb://localhost/mean-dev',
+		uri: 'mongodb://electromafr:ungorille@ds035603.mongolab.com:35603/linkypasty',
 		options: {
 			user: '',
 			pass: ''
