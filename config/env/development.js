@@ -2,7 +2,7 @@
 
 module.exports = {
 	db: {
-		uri: 'mongodb://electromafr:ungorille@ds035603.mongolab.com:35603/linkypasty',
+		uri: 'mongodb://admin:1gorille@ds035603.mongolab.com:35603/linkypasty',
 		options: {
 			user: '',
 			pass: ''
