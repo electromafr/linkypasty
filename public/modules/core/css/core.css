@@ -27,25 +27,36 @@ body {
     -moz-background-size: cover;
       -o-background-size: cover;
          background-size: cover;
-}
-
-.herowrap {
-	color: white;
+	 color: white;
+	 font-family: 'Open Sans', sans-serif;
 }
 
 .welcome-text h1 {
 	font-size: 31px;
+	font-weight: 300;
 }
 
 .welcome-text p {
 	font-size: 21px;
+	font-weight: 300;
 }
 
 .herowrap {
 	margin-top: 50px;
+	font-weight: 300;
+}
+
+.herowrap h2 {
+	font-weight: 300;
 }
 
 .welcome-forms .form-group {
 	margin-left: 0;
 	margin-right: 0;
+}
+
+.welcome-forms  {
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 0 20px 20px 20px;
 }

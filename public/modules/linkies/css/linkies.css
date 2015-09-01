@@ -1,3 +1,11 @@
 .item-linky {
 	padding-bottom: 40px
 }
+
+.page-header {
+	border: none;
+}
+
+.list-group {
+	color: #333;
+}

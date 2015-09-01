@@ -45,6 +45,9 @@ module.exports = {
 			css: [
 				'public/lib/bootstrap/dist/css/bootstrap.css',
 				'public/lib/bootstrap/dist/css/bootstrap-theme.css',
+
+				/* External : */
+				'https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic'
 			],
 			js: [
 				'public/lib/angular/angular.js',

@@ -2,11 +2,11 @@
 	<div data-ng-if="authentication.user == false">
 		<div class="row herowrap">
 			<div class="col-md-10 col-md-offset-1">
-				<div class="welcome-text col-md-8">
+				<div class="welcome-text col-md-7">
 					<h1>Welcome to LinkyPasty</h1>
 					<p>Tired of sending to yourself links in an email ? Save here your important links and open them from any device. Add titles and descriptions to easily identify them. Search them by number of clicks, date or categories.</p>
 				</div>
-				<div class="welcome-forms col-md-offset-1 col-md-3"  data-ng-controller="AuthenticationController">
+				<div class="welcome-forms col-md-offset-1 col-md-4"  data-ng-controller="AuthenticationController">
 					<div class="signin-form">
 						<h2>Sign In</h2>
 							<form data-ng-submit="signin()" class="signin form-horizontal" autocomplete="off">
@@ -30,7 +30,7 @@
 							</form>
 					</div>
 					<div class="signup-form">
-						<a href="/signup">Or register</a>
+						<a href="/#!/signup">Or register</a>
 					</div>
 				</div>
 			</div>
