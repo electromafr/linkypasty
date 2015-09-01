@@ -22,7 +22,6 @@ body.ng-cloak
 /*PAB*/
 
 body {
-	min-height: 100%;
 	background-image: url(https://images.unsplash.com/photo-1422513391413-ddd4f2ce3340?q=80&fm=jpg&s=162d068a636d945cd9d124af17387fbd);
     -moz-background-size: cover;
       -o-background-size: cover;
