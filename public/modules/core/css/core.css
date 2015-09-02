@@ -53,13 +53,18 @@ a:hover, a:focus {
 }
 
 body {
-	background-image: url(https://images.unsplash.com/photo-1422513391413-ddd4f2ce3340?q=80&fm=jpg&s=162d068a636d945cd9d124af17387fbd);
+	background-image: url(../img/background/background.jpeg);
     -moz-background-size: cover;
       -o-background-size: cover;
          background-size: cover;
 	 color: #C994FF;
 	 font-family: 'Open Sans', sans-serif;
 }
+
+.content .container {
+		padding-top: 20px;
+}
+
 
 /*header*/
 .navbar-brand img {
@@ -80,6 +85,7 @@ body {
 }
 
 .navbar {
+	background-color: rgb(29, 29, 29);
 	background-color: rgba(29, 29, 29, 0.8);
 }
 
@@ -123,4 +129,10 @@ body {
 	border-radius: 5px;
 	padding: 0 20px 20px 20px;
 	margin-bottom: 60px;
+}
+
+/* Page */
+
+.page-header {
+    margin: 0 0 20px;
 }
