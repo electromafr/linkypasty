@@ -112,7 +112,10 @@ body {
 
 .herowrap .logo-home {
 	margin-bottom: 70px;
+	max-width: 300px;
 }
+
+
 
 .herowrap h2 {
 	font-weight: 300;
