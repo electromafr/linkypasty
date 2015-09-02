@@ -16,7 +16,7 @@ angular.module('linkies').controller('LinkiesController', ['$scope', '$statePara
 
 			// Redirect after save
 			linky.$save(function(response) {
-				$location.path('linkies/' + response._id);
+				$location.path('linkies');
 
 				// Clear form fields
 				$scope.title = '';

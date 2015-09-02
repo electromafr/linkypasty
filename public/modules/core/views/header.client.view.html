@@ -6,7 +6,9 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a href="/#!/" class="navbar-brand">LinkyPasty</a>
+			<a href="/#!/" class="navbar-brand">
+			<img alt="Brand" src="modules/core/img/brand/square-logo.png">
+    </a>
 	</div>
 	<nav class="collapse navbar-collapse" collapse="!isCollapsed" role="navigation">
 		<ul class="nav navbar-nav" data-ng-if="menu.shouldRender(authentication.user);">
@@ -33,26 +35,18 @@
 				<a href="/#!/signin">Sign In</a>
 			</li>
 		</ul>-->
-		<ul class="nav navbar-nav navbar-right" data-ng-show="authentication.user">
-			<li class="dropdown" dropdown>
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown" dropdown-toggle>
-					<span data-ng-bind="authentication.user.username"></span> <b class="caret"></b>
-				</a>
-				<ul class="dropdown-menu">
+		<ul class="nav navbar-nav navbar-right" >
+
 					<li>
-						<a href="/#!/settings/profile">Edit Profile</a>
+						<a href="/#!/about">About</a>
 					</li>
-					<!--<li>
-						<a href="/#!/settings/accounts">Manage Social Accounts</a>
-					</li>-->
-					<li data-ng-show="authentication.user.provider === 'local'">
-						<a href="/#!/settings/password">Change Password</a>
+					<li data-ng-show="authentication.user">
+						<a href="/#!/settings/profile">My Profile</a>
 					</li>
-					<li class="divider"></li>
-					<li>
+					<li data-ng-show="authentication.user">
 						<a href="/auth/signout">Signout</a>
 					</li>
-				</ul>
+
 			</li>
 		</ul>
 	</nav>

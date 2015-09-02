@@ -19,15 +19,74 @@ body.ng-cloak
 	display: block;
 }
 
-/*PAB*/
+/*CSS of PAB
+
+COLORS :
+562BD1
+692BD1
+8833DE
+A85BF6
+C994FF
+*/
+
+/*general*/
+
+a {
+		color: #8833DE;
+		font-weight: 600;
+}
+
+a:hover, a:focus {
+	color: #562BD1;
+}
+
+.nav > li > a {
+	font-weight: 400;
+}
+
+.nav > li > a:hover {
+	background-color: #C994FF;
+}
+
+.navbar-brand, .navbar-nav > li > a {
+    text-shadow: none;
+}
 
 body {
 	background-image: url(https://images.unsplash.com/photo-1422513391413-ddd4f2ce3340?q=80&fm=jpg&s=162d068a636d945cd9d124af17387fbd);
     -moz-background-size: cover;
       -o-background-size: cover;
          background-size: cover;
-	 color: white;
+	 color: #C994FF;
 	 font-family: 'Open Sans', sans-serif;
+}
+
+/*header*/
+.navbar-brand img {
+	width: 34px;
+	border-radius: 5px;
+}
+
+.navbar-brand {
+	padding: 8px;
+}
+
+.navbar-toggle span {
+	background-color : #C994FF;
+}
+
+.navbar-toggle {
+	border: 1px solid #C994FF;
+}
+
+.navbar {
+	background-color: rgba(29, 29, 29, 0.8);
+}
+
+/*home*/
+
+.welcome-text{
+	margin-bottom: 60px;
 }
 
 .welcome-text h1 {
@@ -41,13 +100,18 @@ body {
 }
 
 .herowrap {
-	margin-top: 50px;
+	margin-top: 75px;
 	font-weight: 300;
+}
+
+.herowrap .logo-home {
+	margin-bottom: 70px;
 }
 
 .herowrap h2 {
 	font-weight: 300;
 }
+
 
 .welcome-forms .form-group {
 	margin-left: 0;
@@ -55,7 +119,7 @@ body {
 }
 
 .welcome-forms  {
-	border: 1px solid white;
-	border-radius: 10px;
+	border: 1px solid #C994FF;
+	border-radius: 5px;
 	padding: 0 20px 20px 20px;
 }
