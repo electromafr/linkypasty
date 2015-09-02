@@ -1,14 +1,16 @@
 <section data-ng-controller="HomeController">
 	<div data-ng-if="authentication.user == false">
 		<div class="herowrap">
-			<div class="col-md-10 col-md-offset-1">
+			<div class="col-sm-10 col-sm-offset-1">
 				<img src="modules/core/img/brand/logo-linkypasty.svg" alt="centered logo of linkypasty" class="logo-home center-block img-responsive">
 				<div class="row">
-				<div class="welcome-text col-md-7">
+				<div class="welcome-text col-sm-offset-2 col-sm-8 text-center">
 					<h1>Welcome to LinkyPasty</h1>
 					<p>Tired of sending to yourself links in an email ? Save here your important links and open them from any device. Add titles and descriptions to easily identify them. Search them by number of clicks, date or categories.</p>
 				</div>
-				<div class="welcome-forms col-md-offset-1 col-md-4"  data-ng-controller="AuthenticationController">
+			</div>
+			<div>
+				<div class="welcome-forms col-sm-offset-4 col-sm-4"  data-ng-controller="AuthenticationController">
 					<div class="signin-form">
 						<h2>Sign In</h2>
 							<form data-ng-submit="signin()" class="signin form-horizontal" autocomplete="off">
@@ -31,9 +33,11 @@
 								</fieldset>
 							</form>
 					</div>
+
 					<div class="signup-form">
 						<a href="/#!/signup">Or register</a>
 					</div>
+						</div>
 				</div>
 			</div>
 			</div>

@@ -92,32 +92,31 @@ body {
 /*home*/
 
 .welcome-text{
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 }
 
 .welcome-text h1 {
-	font-size: 31px;
+	font-size: 25px;
 	font-weight: 300;
 }
 
 .welcome-text p {
-	font-size: 21px;
+	font-size: 16px;
 	font-weight: 300;
 }
 
 .herowrap {
-	margin-top: 75px;
+	margin-top: 20px;
 	font-weight: 300;
 }
 
 .herowrap .logo-home {
-	margin-bottom: 70px;
+	margin-bottom: 20px;
 	max-width: 300px;
 }
 
-
-
 .herowrap h2 {
+	font-size: 21px;
 	font-weight: 300;
 }
 
@@ -131,7 +130,7 @@ body {
 	border: 1px solid #C994FF;
 	border-radius: 5px;
 	padding: 0 20px 20px 20px;
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 }
 
 /* Page */
