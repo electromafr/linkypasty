@@ -10,23 +10,83 @@
 	color: #333;
 }
 
-.add-linky {
+
+/******************************************************/
+/****************** Add Linky button ******************/
+/******************************************************/
+
+.add-linky-wrapper {
+	border: 1px solid #8833DE;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.add-linky-wrapper .btn-add-linky {
 	text-align: center;
+	overflow: hidden;
 }
 
-.add-linky a {
-	display: block;
-	line-height: 30px;
-	border: 1px solid;
-	margin-bottom: 10px;
-}
-
-.add-linky a:hover {
-	color: white;
-	display: block;
-	line-height: 30px;
-	border: 1px solid;
-	margin-bottom: 10px;
+.add-linky-wrapper .form-add-linky {
+	padding: 0	30px 0 30px;
+	overflow: hidden;
 	background-color: rgb(0, 0, 0);
 	background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.add-linky-wrapper .btn-add-linky,
+.add-linky-wrapper .form-add-linky {
+	line-height: 30px;
+}
+
+
+.add-linky-wrapper .btn-add-linky {
+	width: 100%
+}
+
+.add-linky-wrapper .btn-add-linky:hover {
+	color: white;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/******************************************************/
+/****************** List of linkies* ******************/
+/******************************************************/
+
+.item-linky .linky-link {
+	font-size: 22px;
+}
+
+.item-linky .linky-link, .item-linky .linky-link:visited {
+  text-decoration: none;
+  position: relative;
+}
+
+.item-linky  .linky-link:after, .item-linky  .linky-link:visited:after {
+  content: '';
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0	;
+  background: #8833DE;
+  transition: 0.2s;
+}
+.item-linky  .linky-link:hover:after, .item-linky .linky-link:visited:hover:after {
+  width: 100%;
+}
+.item-linky  .linky-link.block, .item-linky  .linky-link:visited.block {
+  display: block;
+  padding: 0.5em;
+}
+.item-linky  .linky-link.block:hover, .item-linky  .linky-link:visited.block:hover {
+  background: #eee;
+}
+
+.item-linky .linky-description {
+	margin-top: 20px;
 }

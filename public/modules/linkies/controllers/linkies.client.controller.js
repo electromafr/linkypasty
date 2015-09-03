@@ -16,12 +16,17 @@ angular.module('linkies').controller('LinkiesController', ['$scope', '$statePara
 
 			// Redirect after save
 			linky.$save(function(response) {
-				$location.path('linkies');
-
 				// Clear form fields
 				$scope.title = '';
 				$scope.link = '';
 				$scope.description = '';
+
+				$scope.linkyForm.$setPristine();
+
+				var newLinky = new Linkies(response.created);
+				newLinky.user = $scope.authentication.user;
+				$scope.linkies.unshift(newLinky);
+
 			}, function(errorResponse) {
 				$scope.error = errorResponse.data.message;
 			});

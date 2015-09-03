@@ -1,0 +1,21 @@
+<div class="list-group">
+  <div data-ng-repeat="linky in linkies" data-ng-href="#!/linkies/{{linky._id}}" class="list-group-item item-linky">
+    <small class="list-group-item-text pull-right">
+      Posted on
+      <span data-ng-bind="linky.created | date:'mediumDate'"></span>
+      by
+      <span data-ng-bind="linky.user.username"></span>
+    </small>
+    <h4 class="list-group-item-heading linky-title" data-ng-bind="linky.title"></h4>
+    <a href="{{linky.link}}" data-ng-bind="linky.link" target="_blank" class="linky-link"></a>
+    <p class="list-group-item-text linky-description" data-ng-bind="linky.description"></p>
+    <div class="pull-right" data-ng-show="authentication.user._id == linky.user._id">
+      <a class="btn" href="/#!/linkies/{{linky._id}}/edit">
+        <i class="glyphicon glyphicon-edit"></i>
+      </a>
+      <a class="btn" data-ng-click="remove(linky);">
+        <i class="glyphicon glyphicon-trash"></i>
+      </a>
+    </div>
+  </div>
+</div>

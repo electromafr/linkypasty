@@ -21,7 +21,8 @@ exports.create = function(req, res) {
 				message: errorHandler.getErrorMessage(err)
 			});
 		} else {
-			res.json(linky);
+			linky.user = req.user;
+			res.json({created : linky});
 		}
 	});
 };
