@@ -1,15 +1,15 @@
 <div class="add-linky-wrapper" close-others="oneAtATime">
   <a class="btn btn-add-linky" collapse="showForm" ng-click="toggleShowForm()">
-    Add
+   {{messageAdd}}
   </a>
   <div class="form-add-linky" collapse="!showForm">
-    <form  name="linkyForm"  class="form-horizontal" data-ng-submit="create()" novalidate>
-      <a class="pull-right" href='#' ng-click="toggleShowForm();">Close</a>
+    <form  name="linkyForm"  class="form-horizontal" data-ng-submit="submit()" novalidate>
+      <a class="pull-right" ng-click="toggleShowForm();">Close</a>
       <div class="clearfix"></div>
       <fieldset >
         <div class="row">
           <div class="col-sm-4">
-            <div class="form-group" data-ng-model="form" ng-class="{ 'has-error': linkyForm.title.$dirty && linkyForm.title.$invalid }">
+            <div class="form-group" ng-class="{ 'has-error': linkyForm.title.$dirty && linkyForm.title.$invalid }">
               <label class="control-label" for="title">Title</label>
               <div class="controls">
                 <input name="title" type="text" data-ng-model="title" id="title" class="form-control" placeholder="Title" required>

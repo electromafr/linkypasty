@@ -9,17 +9,18 @@ angular.module('linkies').directive('addLinkyButton', [
 			link: function postLink(scope, element, attrs) {
 				// Add linky button directive logic
 				scope.showForm = false;
+				scope.messageAdd = 'Add a new Linky !';
 
-				scope.toggleShowForm = function() {
-					if (scope.showForm)
-						scope.showForm = false;
-					else {
-						scope.showForm = true;
+				scope.submit = function() {
+					if(scope.create()){
+						scope.messageAdd = 'New linky added. Click to add another linky.';
+						scope.toggleShowForm();
 					}
 				};
-
-
-
+				
+				scope.toggleShowForm = function() {
+						scope.showForm = !scope.showForm;
+				};
 			}
 		};
 	}

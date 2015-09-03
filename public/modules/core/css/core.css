@@ -19,6 +19,10 @@ body.ng-cloak
 	display: block;
 }
 
+[ng-click] {
+	cursor: pointer;
+}
+
 /*CSS of PAB
 
 COLORS :
@@ -53,12 +57,14 @@ a:hover, a:focus {
 }
 
 body {
-	background-image: url(../img/background/background.jpeg);
-    -moz-background-size: cover;
-      -o-background-size: cover;
-         background-size: cover;
-	 color: #C994FF;
-	 font-family: 'Open Sans', sans-serif;
+		background-color: #241825;
+		background-image: url(../img/background/background.jpeg);
+	  background-repeat: no-repeat;
+	  background-size: 100% auto;
+	  background-position: center top;
+		background-attachment: fixed;
+		color: #C994FF;
+		font-family: 'Open Sans', sans-serif;
 }
 
 .content .container {

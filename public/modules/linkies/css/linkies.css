@@ -57,8 +57,13 @@
 /****************** List of linkies* ******************/
 /******************************************************/
 
+.item-linky {
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+}
+
 .item-linky .linky-link {
-	font-size: 22px;
+	font-size: 14px;
 }
 
 .item-linky .linky-link, .item-linky .linky-link:visited {
