@@ -60,7 +60,8 @@ body {
 		background-color: #241825;
 		background-image: url(../img/background/background.jpeg);
 	  background-repeat: no-repeat;
-	  background-size: 100% auto;
+	  background-size: auto 100%;
+		min-height: 100%
 	  background-position: center top;
 		background-attachment: fixed;
 		color: #C994FF;
