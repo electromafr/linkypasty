@@ -60,8 +60,7 @@ body {
 		background-color: #241825;
 		background-image: url(../img/background/background.jpeg);
 	  background-repeat: no-repeat;
-	  background-size: auto 100%;
-		min-height: 100%
+	  background-size: cover;
 	  background-position: center top;
 		background-attachment: fixed;
 		color: #C994FF;
@@ -72,6 +71,9 @@ body {
 		padding-top: 20px;
 }
 
+label {
+	font-weight: normal;
+}
 
 /*header*/
 .navbar-brand img {
